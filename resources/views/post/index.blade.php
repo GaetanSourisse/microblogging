@@ -42,7 +42,7 @@
 <body>
 
   <header>
-    <div class="collapse bg-dark" id="navbarHeader">
+    <div class="collapse" style="background-image: url('{{ asset('image/ciel_etoile.jpg') }}')" id="navbarHeader">
       <div class="container">
         <div class="row">
           <div class="col-sm-8 col-md-7 py-4">
@@ -61,7 +61,7 @@
         </div>
       </div>
     </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm" style="background-color:#000000">
+    <div class="navbar navbar-dark shadow-sm" style="background-color:#000000; border-top:1px solid #f8fbfe; border-bottom:1px solid #f8fbfe">
       <div class="container">
         <a href="#" class="navbar-brand d-flex align-items-center">
             <img src="{{ asset('image/logo_celestia.png') }}" alt="tag"  height="50" width="50">
@@ -75,20 +75,20 @@
     </div>
   </header>
 
-  <main>
+  <main style="background-color:#000000">
 
-    <section class="py-5 text-center container">
+    <section class="py-5 text-center container" style="background-color:#000000">
       <div class="row py-lg-5" style="background-image: url('{{ asset('image/aurore_boreale.jpeg') }}'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 20px;">
         <div class="col-lg-6 col-md-8 mx-auto">
             <h1 style="color:#f8fbfe; font-size:4.5em" >Celestia</h1>
-            <p style="color:#252e46; font-weight: bold">Bienvenue sur Celestia ! Le blog qui parle aux fans de la voûte céleste au ciel azur. Viens partager ta passion avec nous !</p> 
+            <p style="color:#252e46; font-weight: bold">Le blog qui parle aux fans de la voûte céleste au ciel azur. Viens partager ta passion avec nous !</p> 
         </div>
       </div>
     </section>
 
-    <div class="album py-5 bg-light" style="background-color:#132636">
+    <div class="album py-5" style="background-color:#000000">
         @foreach($posts as $post)
-            <div class="container">
+            <div class="container py-4">
             
                 <div>
                     <div>
@@ -116,14 +116,13 @@
 
   </main>
 
-  <footer class="text-muted py-5">
+  <footer class="text-muted py-5" style="background-image: url('{{ asset('image/ciel_etoile.jpg') }}')">
     <div class="container">
       <p class="float-right mb-1">
         <a href="#">Back to top</a>
       </p>
-      <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-      <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-          href="/docs/5.0/getting-started/introduction/">getting started guide</a>.</p>
+      <p class="mb-1">Cindy Bestaven, Juliette De Quatrebarbe, Thibaut Champenois, Gaëtan Sourisse.</p>
+      <p class="mb-0"><a href="https://adatechschool.fr/">Ada Tech School</a></p>
     </div>
   </footer>
 

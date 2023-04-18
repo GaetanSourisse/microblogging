@@ -19,7 +19,7 @@ class PostFactory extends Factory
     { //on crée un jeu de faux posts
         return [
             'title' => fake()->sentence,
-            'image' => fake()->imageUrl($width = 400, $height = 400),
+            'image' => fake()->imageUrl($width = 400, $height = 200),
             'content' => implode(fake()->paragraphs(3)),
             'user_id' => $this->faker->randomElement(User::pluck('id')),
         ];
