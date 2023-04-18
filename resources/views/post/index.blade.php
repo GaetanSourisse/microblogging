@@ -1,8 +1,3 @@
-<!-- @foreach($posts as $post)
-<h2>{{ $post->title }}</h2>
-<p>{{ $post->content }}</p>
-<p>{{ $post->image}}</p>
-@endforeach -->
 
 <!doctype html>
 <html lang="en">

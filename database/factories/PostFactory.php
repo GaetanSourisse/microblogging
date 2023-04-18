@@ -20,7 +20,7 @@ class PostFactory extends Factory
         return [
             'title' => fake()->sentence,
             'image' => fake()->imageUrl($width = 400, $height = 400),
-            'content' => implode(fake()->paragraphs(10)),
+            'content' => implode(fake()->paragraphs(3)),
             'user_id' => $this->faker->randomElement(User::pluck('id')),
         ];
     }

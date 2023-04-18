@@ -15,9 +15,9 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('post.index');
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -32,4 +32,4 @@ Route::middleware('auth')->group(function () {
 require __DIR__ . '/auth.php';
 
 // La route-ressource => Les routes "post.*"
-Route::resource("posts", PostController::class);
+Route::resource("/", PostController::class);
