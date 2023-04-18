@@ -1,3 +1,9 @@
+<!-- @foreach($posts as $post)
+<h2>{{ $post->title }}</h2>
+<p>{{ $post->content }}</p>
+<p>{{ $post->image}}</p>
+@endforeach -->
+
 <!doctype html>
 <html lang="en">
 
@@ -95,35 +101,31 @@
     </section>
 
     <div class="album py-5 bg-light">
-      <div class="container">
-        
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-                  aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" role="img" focusable="false">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                    dy=".3em">Thumbnail</text>
-                </svg>
+        @foreach($posts as $post)
+            <div class="container">
+            
+                <div>
+                    <div>
+                        <div class="card shadow-sm flex flex-row">
+                            <img src="{{ $post->image }}"></img>
 
-                <div class="card-body">
-                  
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                    content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            <div class="card-body">
+                                <h3>{{ $post->title }}</h3>
+                                <p class="card-text">{{ $post->content}}</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">posté le {{ $post->created_at}} par {{ $post->user_id}}</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
         
-      </div>
+            </div>
+        @endforeach
     </div>
 
   </main>

@@ -13,6 +13,13 @@ class PostController extends Controller
      */
     public function index()
     {
+        //On récupère tous les Post
+        $posts = Post::all();
+
+        // dd($posts);
+
+        // On transmet les Post à la vue
+        return view("post.index", compact("posts"));
         //
     }
 
