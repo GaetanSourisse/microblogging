@@ -42,16 +42,16 @@
 <body>
 
   <header>
-    <div class="collapse bg-dark" id="navbarHeader">
+    <div class="collapse" style="background-image: url('{{ asset('image/ciel_etoile.jpg') }}')" id="navbarHeader">
       <div class="container">
         <div class="row">
           <div class="col-sm-8 col-md-7 py-4">
             <h4 class="text-white"><a href="login" class="text-white">Log in</a></h4>
-            <p class="text-muted">Ravi de vous revoir!</p>
+            <p style="color:#f8fbfe">Ravi de vous revoir!</p>
           </div>
           <div class="col-sm-4 offset-md-1 py-4">
             <h4 class="text-white"><a href="register" class="text-white">Sign in</a></h4>
-            <p class="text-muted">Première visite? Rejoignez notre communauté!</p>
+            <p style="color:#f8fbfe">Première visite? Rejoignez notre communauté!</p>
             <!-- <ul class="list-unstyled">
               <li><a href="#" class="text-white">Follow on Twitter</a></li>
               <li><a href="#" class="text-white">Like on Facebook</a></li>
@@ -61,7 +61,7 @@
         </div>
       </div>
     </div>
-    <div class="navbar navbar-dark shadow-sm" style="background-color:#000000">
+    <div class="navbar navbar-dark shadow-sm" style="background-color:#000000; border-top:2px solid #f8fbfe">
       <div class="container">
         <a href="#" class="navbar-brand d-flex align-items-center">
           <img src="{{ asset('image/logo_celestia.png') }}" alt="tag"  height="50" width="50">
