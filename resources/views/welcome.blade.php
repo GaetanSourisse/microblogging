@@ -61,15 +61,11 @@
         </div>
       </div>
     </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="navbar navbar-dark shadow-sm" style="background-color:#000000">
       <div class="container">
         <a href="#" class="navbar-brand d-flex align-items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
-            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2"
-            viewBox="0 0 24 24">
-            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-            <circle cx="12" cy="13" r="4" /></svg>
-          <strong>Notre site de microblogging</strong>
+          <img src="{{ asset('image/logo_celestia.png') }}" alt="tag"  height="50" width="50">
+          <strong>Bienvenue sur Celestia</strong>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
           aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,15 +78,10 @@
   <main>
 
     <section class="py-5 text-center container">
-      <div class="row py-lg-5" style="background-image: url('{{ asset('image/aurore_boreale.jpeg') }}'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+      <div class="row py-lg-5" style="background-image: url('{{ asset('image/aurore_boreale.jpeg') }}'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 20px;">
         <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="font-weight-light">Album example</h1>
-          <p style="color:#020617">Something short and leading about the collection below—its contents, the creator,
-            etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-          <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-          </p>
+          <h1 style="color:#f8fbfe; font-size:4.5em" >Celestia</h1>
+          <p style="color:#252e46; font-weight: bold">Bienvenue sur Celestia ! Le blog qui parle aux fans de la voûte céleste au ciel azur. Viens partager ta passion avec nous !</p>
         </div>
       </div>
     </section>
