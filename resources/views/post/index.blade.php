@@ -42,16 +42,16 @@
 <body>
 
   <header>
-    <div class="collapse bg-dark" id="navbarHeader">
+    <div class="collapse" style="background-image: url('{{ asset('image/ciel_etoile.jpg') }}')" id="navbarHeader">
       <div class="container">
         <div class="row">
           <div class="col-sm-8 col-md-7 py-4">
             <h4 class="text-white"><a href="login" class="text-white">Log in</a></h4>
-            <p class="text-muted">Ravi de vous revoir!</p>
+            <p style="color:#f8fbfe">Ravi de vous revoir!</p>
           </div>
           <div class="col-sm-4 offset-md-1 py-4">
             <h4 class="text-white"><a href="register" class="text-white">Sign in</a></h4>
-            <p class="text-muted">Première visite? Rejoignez notre communauté!</p>
+            <p style="color:#f8fbfe">Première visite? Rejoignez notre communauté!</p>
             <!-- <ul class="list-unstyled">
               <li><a href="#" class="text-white">Follow on Twitter</a></li>
               <li><a href="#" class="text-white">Like on Facebook</a></li>
@@ -61,7 +61,7 @@
         </div>
       </div>
     </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm" style="background-color:#000000">
+    <div class="navbar navbar-dark shadow-sm" style="background-color:#000000; border-top:1px solid #f8fbfe; border-bottom: 1px solid #f8fbfe">
       <div class="container">
         <a href="#" class="navbar-brand d-flex align-items-center">
             <img src="{{ asset('image/logo_celestia.png') }}" alt="tag"  height="50" width="50">
@@ -75,10 +75,10 @@
     </div>
   </header>
 
-  <main>
+  <main style="background-color:#000000">
 
     <section class="py-5 text-center container">
-      <div class="row py-lg-5" style="background-image: url('{{ asset('image/aurore_boreale.jpeg') }}'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 20px;">
+      <div class="row py-lg-5" style="background-image: url('{{ asset('image/aurore_boreale.jpeg') }}'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 20px">
         <div class="col-lg-6 col-md-8 mx-auto">
             <h1 style="color:#f8fbfe; font-size:4.5em" >Celestia</h1>
             <p style="color:#252e46; font-weight: bold">Bienvenue sur Celestia ! Le blog qui parle aux fans de la voûte céleste au ciel azur. Viens partager ta passion avec nous !</p> 
@@ -86,9 +86,9 @@
       </div>
     </section>
 
-    <div class="album py-5 bg-light" style="background-color:#132636">
+    <div class="album py-5" style="background-color:#000000">
         @foreach($posts as $post)
-            <div class="container">
+            <div class="container py-4">
             
                 <div>
                     <div>
@@ -116,10 +116,13 @@
 
   </main>
 
-  <footer class="text-muted py-5">
+  <footer class="text-muted py-5" style="background-image: url('{{ asset('image/ciel_etoile.jpg') }}'); border-top: 2px solid #f8fbfe">
     <div class="container">
       <p class="float-right mb-1">
-        <a href="#">Back to top</a>
+        <button style="padding:0.7em; border-radius:2em; background-color:#f8fbfe">
+        <a href="#" style="color:#000000; text-decoration:none; font-weight: bold">Remonter la page
+        <img src="{{ asset('image/fleche_haut.png') }}" alt="tag"  height="25" width="25">
+        </a></button>
       </p>
       <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
       <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
