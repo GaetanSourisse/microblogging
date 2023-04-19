@@ -61,7 +61,7 @@
         </div>
       </div>
     </div>
-    <div class="navbar navbar-dark shadow-sm" style="background-color:#000000; border-top:1px solid #f8fbfe; border-bottom: 1px solid #f8fbfe">
+    <div class="navbar navbar-dark bg-dark shadow-sm" style="background-color:#000000">
       <div class="container">
         <a href="#" class="navbar-brand d-flex align-items-center">
             <img src="{{ asset('image/logo_celestia.png') }}" alt="tag"  height="50" width="50">
@@ -77,11 +77,11 @@
 
   <main style="background-color:#000000">
 
-    <section class="py-5 text-center container">
-      <div class="row py-lg-5" style="background-image: url('{{ asset('image/aurore_boreale.jpeg') }}'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 20px">
+    <section class="py-5 text-center container" style="background-color:#000000">
+      <div class="row py-lg-5" style="background-image: url('{{ asset('image/aurore_boreale.jpeg') }}'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 20px;">
         <div class="col-lg-6 col-md-8 mx-auto">
             <h1 style="color:#f8fbfe; font-size:4.5em" >Celestia</h1>
-            <p style="color:#252e46; font-weight: bold">Bienvenue sur Celestia ! Le blog qui parle aux fans de la voûte céleste au ciel azur. Viens partager ta passion avec nous !</p> 
+            <p style="color:#252e46; font-weight: bold">Le blog qui parle aux fans de la voûte céleste au ciel azur. Viens partager ta passion avec nous !</p> 
         </div>
       </div>
     </section>
@@ -124,9 +124,8 @@
         <img src="{{ asset('image/fleche_haut.png') }}" alt="tag"  height="25" width="25">
         </a></button>
       </p>
-      <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-      <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-          href="/docs/5.0/getting-started/introduction/">getting started guide</a>.</p>
+      <p class="mb-1">Cindy Bestaven, Juliette De Quatrebarbe, Thibaut Champenois, Gaëtan Sourisse.</p>
+      <p class="mb-0"><a href="https://adatechschool.fr/">Ada Tech School</a></p>
     </div>
   </footer>
 
