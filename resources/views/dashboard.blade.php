@@ -8,11 +8,11 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
+                <div class="p-6 bg-black text-white">
                     {{ __("Tu es connecté.e !") }}
                 </div>
-                <div class="formulaire">
-                    <h2>Créer un nouveau post</h2>
+                <div class="formulaire" style="padding:20px;">
+                    <h2 style="margin-bottom:20px; font-weight:bold">Créer un nouveau post</h2>
                     <form method="POST" class="flex flex-col" >
                         <label>Title</label>
                         <input type="text">
@@ -20,15 +20,15 @@
                         <input type="text">
                         <label>Image</label>
                         <input type="url">
-                        <button type="submit">Publier</button>
+                        <button type="submit" style="padding:10px; border:1px solid #fbfbfc; width:100px; margin-top:15px; background-color: #000000; color:#fbfbfc ">
+                        Publier</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <div class="album py-5" style="background-color:#000000">
+    <div class="album py-5">
         @include('post.show')
-        
     </div>
     
 </x-app-layout>

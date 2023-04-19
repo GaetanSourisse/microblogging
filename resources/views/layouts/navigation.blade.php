@@ -5,9 +5,6 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="/">
-                    <img src="{{ asset('image/logo_celestia.png') }}" alt="tag"  height="50" width="50">
-                    </a>
                     <a href="/"><img src="{{ asset('image/logo_celestia.png') }}" alt="tag"  height="50" width="50"></a>
                 </div>
 
