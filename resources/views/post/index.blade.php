@@ -92,8 +92,8 @@
             
                 <div>
                     <div>
-                        <div class="card shadow-sm flex flex-row">
-                            <img src="{{ $post->image }}"></img>
+                        <div class="card shadow-sm flex flex-row" style="height:350px">
+                            <img src="{{ $post->image }}" style="width:600px"></img>
 
                             <div class="card-body">
                                 <h3>{{ $post->title }}</h3>
