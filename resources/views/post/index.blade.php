@@ -61,7 +61,7 @@
         </div>
       </div>
     </div>
-    <div class="navbar navbar-dark bg-dark shadow-sm" style="background-color:#000000">
+    <div class="navbar navbar-dark shadow-sm" style="background-color:#000000; border-top:1px solid #f8fbfe; border-bottom:1px solid #f8fbfe ">
       <div class="container">
         <a href="#" class="navbar-brand d-flex align-items-center">
             <img src="{{ asset('image/logo_celestia.png') }}" alt="tag"  height="50" width="50">
@@ -124,8 +124,9 @@
         <img src="{{ asset('image/fleche_haut.png') }}" alt="tag"  height="25" width="25">
         </a></button>
       </p>
-      <p class="mb-1">Cindy Bestaven, Juliette De Quatrebarbe, Thibaut Champenois, Gaëtan Sourisse.</p>
-      <p class="mb-0"><a href="https://adatechschool.fr/">Ada Tech School</a></p>
+      <p class="mb-1"><img src="{{ asset('image/logo_celestia.png') }}" alt="tag"  height="30" width="30">Cindy Bestaven, Juliette De Quatrebarbe, Thibaut Champenois, Gaëtan Sourisse.</p>
+      <p class="mb-0" style="text-decoration:none;"><a href="https://adatechschool.fr/" style=" color: #e80635; font-size:1.8em; font-weight: bold">
+      Ada Tech School</a></p>
     </div>
   </footer>
 
