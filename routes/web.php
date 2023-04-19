@@ -19,9 +19,11 @@ use App\Http\Controllers\PostController;
 //     return view('post.index');
 // });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// });
+
+// Route::get('/dashboard', [PostController::class, 'myPosts'])->middleware('auth')->name('posts.myPosts');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -32,4 +34,5 @@ Route::middleware('auth')->group(function () {
 require __DIR__ . '/auth.php';
 
 // La route-ressource => Les routes "post.*"
-Route::resource("/", PostController::class);
+Route::get("/", [PostController::class, "index"]);
+Route::get("/dashboard", [PostController::class, "show"])->middleware(['auth', 'verified'])->name('dashboard');

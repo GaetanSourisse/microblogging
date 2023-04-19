@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StorePostRequest;
 use App\Http\Requests\UpdatePostRequest;
 use App\Models\Post;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
@@ -28,7 +30,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        //Création de nouveaux posts
+        return view("post.create", compact("posts"));
     }
 
     /**
@@ -36,7 +39,8 @@ class PostController extends Controller
      */
     public function store(StorePostRequest $request)
     {
-        //
+
+
     }
 
     /**
@@ -44,7 +48,13 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        //On récupère tous les Post
+        $posts = Post::all();
+
+        // dd($posts);
+
+        // On transmet les Post à la vue
+        return view("dashboard", compact("posts"));
     }
 
     /**
@@ -69,5 +79,12 @@ class PostController extends Controller
     public function destroy(Post $post)
     {
         //
+    }
+
+    public function myPosts()
+    {
+        $user = Auth::user(); // Get the authenticated user
+        $postsUser = $user->posts; // Get all posts by the authenticated user
+        return view('', compact('postsUser'));
     }
 }
