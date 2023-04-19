@@ -87,7 +87,9 @@
     </section>
 
     <div class="album py-5" style="background-color:#000000">
+        
         @foreach($posts as $post)
+    
             <div class="container py-4">
             
                 <div>
@@ -100,8 +102,8 @@
                                 <p class="card-text">{{ $post->content}}</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"><img src="{{ asset('image/like.png') }}" alt="tag"></button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Comments</button>
                                     </div>
                                     <small class="text-muted">posté le {{ $post->created_at}} par {{ $post->user_id}}</small>
                                 </div>
@@ -111,7 +113,9 @@
                 </div>
         
             </div>
+        
         @endforeach
+        
     </div>
 
   </main>

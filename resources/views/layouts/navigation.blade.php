@@ -8,6 +8,7 @@
                     <a href="/">
                     <img src="{{ asset('image/logo_celestia.png') }}" alt="tag"  height="50" width="50">
                     </a>
+                    <a href="/"><img src="{{ asset('image/logo_celestia.png') }}" alt="tag"  height="50" width="50"></a>
                 </div>
 
                 <!-- Navigation Links -->
