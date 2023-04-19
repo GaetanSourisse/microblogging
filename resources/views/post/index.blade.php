@@ -47,11 +47,11 @@
         <div class="row">
           <div class="col-sm-8 col-md-7 py-4">
             <h4 class="text-white"><a href="login" class="text-white">Log in</a></h4>
-            <p class="text-muted">Ravi de vous revoir!</p>
+            <p style="color:#f8fbfe">Ravi de vous revoir!</p>
           </div>
           <div class="col-sm-4 offset-md-1 py-4">
             <h4 class="text-white"><a href="register" class="text-white">Sign in</a></h4>
-            <p class="text-muted">Première visite? Rejoignez notre communauté!</p>
+            <p style="color:#f8fbfe">Première visite? Rejoignez notre communauté!</p>
             <!-- <ul class="list-unstyled">
               <li><a href="#" class="text-white">Follow on Twitter</a></li>
               <li><a href="#" class="text-white">Like on Facebook</a></li>
@@ -61,7 +61,7 @@
         </div>
       </div>
     </div>
-    <div class="navbar navbar-dark shadow-sm" style="background-color:#000000; border-top:1px solid #f8fbfe; border-bottom:1px solid #f8fbfe">
+    <div class="navbar navbar-dark shadow-sm" style="background-color:#000000; border-top:1px solid #f8fbfe; border-bottom:1px solid #f8fbfe ">
       <div class="container">
         <a href="#" class="navbar-brand d-flex align-items-center">
             <img src="{{ asset('image/logo_celestia.png') }}" alt="tag"  height="50" width="50">
@@ -120,13 +120,17 @@
 
   </main>
 
-  <footer class="text-muted py-5" style="background-image: url('{{ asset('image/ciel_etoile.jpg') }}')">
+  <footer class="text-muted py-5" style="background-image: url('{{ asset('image/ciel_etoile.jpg') }}'); border-top: 2px solid #f8fbfe">
     <div class="container">
       <p class="float-right mb-1">
-        <a href="#">Back to top</a>
+        <button style="padding:0.7em; border-radius:2em; background-color:#f8fbfe">
+        <a href="#" style="color:#000000; text-decoration:none; font-weight: bold">Remonter la page
+        <img src="{{ asset('image/fleche_haut.png') }}" alt="tag"  height="25" width="25">
+        </a></button>
       </p>
-      <p class="mb-1">Cindy Bestaven, Juliette De Quatrebarbe, Thibaut Champenois, Gaëtan Sourisse.</p>
-      <p class="mb-0"><a href="https://adatechschool.fr/">Ada Tech School</a></p>
+      <p class="mb-1"><img src="{{ asset('image/logo_celestia.png') }}" alt="tag"  height="30" width="30">Cindy Bestaven, Juliette De Quatrebarbe, Thibaut Champenois, Gaëtan Sourisse.</p>
+      <p class="mb-0" style="text-decoration:none;"><a href="https://adatechschool.fr/" style=" color: #e80635; font-size:1.8em; font-weight: bold">
+      Ada Tech School</a></p>
     </div>
   </footer>
 
