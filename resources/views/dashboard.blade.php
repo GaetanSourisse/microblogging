@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-    <div class="album py-5">
+    <div class="album py-5" style="background-color:#000000">
         @include('post.show')
     </div>
     
